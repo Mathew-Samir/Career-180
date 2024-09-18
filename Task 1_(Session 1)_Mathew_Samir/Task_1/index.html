@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+</head>
+<body>
+    <form action="send.php" method="POST">
+        <div class="">
+            <label for="name">First Name: </label>
+            <input type="text" name="name" placeholder="first name" required/>
+        </div>
+        <br>
+        <div class="">
+            <label for="name">Last Name: </label>
+            <input type="text" name="name" placeholder="write your last name here"/>
+        </div>
+        <br>
+        <div class="">
+            <label for="phone">Phone number: </label>
+            <input type="text" name="phone" placeholder="phone number" maxlength="11" minlength="11" required
+            title="Phone number must be exactly 11 digits"/>
+        </div>
+        <br>
+        <div class="">
+            <input type="reset" value="Clear All"/>
+            <input type="submit" value="Submit"/>
+        </div>
+    </form>
+
+
+    <p>################################################</p>
+
+    <!-- Duplicated Form with novalidate attribute -->
+    
+
+    <form action="send.php" method="POST" novalidate>
+        <div class="">
+            <label for="first-name-nv">First Name:</label>
+            <input type="text" id="first-name-nv" name="first_name" required/>
+        </div>
+        <br><br>
+        <div class="">
+            <label for="last-name-nv">Last Name:</label>
+            <input type="text" id="last-name-nv" name="last_name" placeholder="write your last name here"/>
+        </div>
+        <br><br>
+        <div class="">
+            <label for="phone-number-nv">Phone Number:</label>
+            <input type="tel" id="phone-number-nv" name="phone_number" maxlength="11" minlength="11" title="Phone number must be 11 digits"
+            required />
+        </div>
+        <br><br>
+        <div class="">
+            <input type="reset" value="Clear All"/>
+            <input type="submit" value="Submit"/>
+        </div>
+    </form>
+</body>
+</html>
