@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5_(Session 5)_Mathew_Samir</title>
+</head>
+
+<body>
+    <p id="message"></p>
+
+    <script>
+        let name = "Mathew", hobby = "Coding", quote = "There is no 'right' or 'wrong' way to make websites. There's the way that works, and then there's everything else.";
+
+        let message = `My name is ${name}.\n\tMy favorite hobby is ${hobby}.\nMy favorite quote is: "${quote}"`;
+
+
+        // This logs the message to the browser's console, which is useful for debugging or checking the output.
+        console.log(message);
+
+
+        // This line selects the paragraph element with the id "message" and replaces its content with the generated message.
+        document.getElementById("message").innerText = message;
+
+
+    </script>
+</body>
+
+</html>
