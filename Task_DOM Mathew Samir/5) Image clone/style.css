@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 6%;
+    margin: 0;
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+.button-container button{
+    margin-top: 20px;
+    width: 12em;
+    height: 3em;
+    font-size: 20px;
+}
+
+.image-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+img {
+    position: absolute;
+    top: 8em;
+    width: 250px;
+    margin: -12em 10em;
+}
+
+.clonedImage {
+    position: absolute;
+    top: 14em;
+    right: 0;
+    width: 250px;
+}
