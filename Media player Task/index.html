@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+<div class="player-container">
+    <h1>MP3 Player</h1>
+    <audio id="audio-player"></audio>
+    
+    <div class="upload-section">
+        <input type="file" id="file-input" accept="audio/mp3" multiple />
+    </div>
+
+    <ul id="track-list"></ul>
+
+    <div class="controls">
+        <button id="play-pause">Play</button>
+        <button id="stop">Stop</button>
+        <button id="swap">Swap</button>
+        <button id="loop">Loop: Off</button>
+        <button id="shuffle">Shuffle</button>
+        <button id="faster">Faster</button>
+        <button id="slower">Slower</button>
+    </div>
+
+    <div class="volume-control">
+        <label for="volume">Volume:</label>
+        <input type="range" id="volume" min="0" max="1" step="0.1" />
+    </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
