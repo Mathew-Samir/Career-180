@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>User Form Validation</title>
+</head>
+
+<body>
+<div class="container">
+    <form id="dataForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Name" required>
+        <span id="nameError" class="error-message"></span>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" placeholder="Age" required>
+        <span id="ageError" class="error-message"></span>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Email" required>
+        <span id="emailError" class="error-message"></span>
+
+        <div class="button-container">
+            <button type="button" id="addButton">Add</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+</div>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody id="dataTable">
+        <!-- Data will be added here -->
+    </tbody>
+</table>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

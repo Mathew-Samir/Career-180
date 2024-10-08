@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: black;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+input:focus {
+    border-color: #6a11cb;
+    outline: none;
+}
+
+.button-container {
+    display: flex;
+    /* Align buttons in a row */
+    justify-content: space-between;
+    /* Distribute space between buttons */
+}
+
+button {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    width: 48%;
+    /* Adjust width to allow space for both buttons */
+    text-align: center;
+}
+
+button[type="reset"] {
+    background-color: #f44336;
+    /* Red color for reset button */
+}
+
+.error-message {
+    color: #ff4d4d;
+    font-size: 0.9em;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 80%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+th {
+    color: black;
+    background-color: white;
+}
+
+tr:nth-child(even) {
+    background-color: black;
+    color: white;
+}
+tr:nth-child(odd) {
+    background-color: black;
+    color: white;
+}
