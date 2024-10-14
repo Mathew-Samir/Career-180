@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Book List</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Book Management System</h1>
+        <label for="numBooks">Enter the number of books:</label>
+        <input type="number" id="numBooks" min="1" />
+        <button id="createBooks">Create Books</button>
+    
+        <div id="bookForm" style="display: none;">
+            <h2>Book Details</h2>
+            <div id="formContainer"></div>
+            <button id="submitBooks">Submit Books</button>
+        </div>
+    
+        <table id="bookTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Author Name</th>
+                    <th>Author Email</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    
+        <div id="editModal" style="display: none;">
+            <h2>Edit Book</h2>
+            <input type="text" id="editBookName" placeholder="Book Name" required />
+            <input type="number" id="editBookPrice" placeholder="Book Price" min="0" required />
+            <input type="text" id="editAuthorName" placeholder="Author Name" required />
+            <input type="email" id="editAuthorEmail" placeholder="Author Email" required />
+            <button id="saveEdit">Save Changes</button>
+            <button id="cancelEdit">Cancel</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
