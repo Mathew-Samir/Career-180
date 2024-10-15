@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Login Form</title>
+</head>
+
+<body>
+    <div class="login-container">
+        <form id="loginForm" onsubmit="return validateLogin()">
+            <h2>Login</h2>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit">Login</button>
+            <p id="error-message"></p>
+        </form>
+    </div>
+    <script>
+        // Dummy login credentials
+        const validUsername = "user";
+        const validPassword = "password";
+
+        function validateLogin() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const errorMessage = document.getElementById('error-message');
+
+            // Clear previous error message
+            errorMessage.textContent = '';
+
+            // Check if the input credentials match the dummy credentials
+            if (username === validUsername && password === validPassword) {
+                // Redirect to the dashboard page
+                window.location.href = 'main.html';
+                return false; // Prevent form submission as we handle the redirection manually
+            } else {
+                // Display error message
+                errorMessage.textContent = 'Invalid username or password.';
+                return false; // Prevent form submission on incorrect credentials
+            }
+        }
+    </script>
+</body>
+
+</html>

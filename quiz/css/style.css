@@ -1,0 +1,103 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    /* Set a max width for better layout on larger screens */
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    /* Enhanced shadow */
+}
+
+h1 {
+    text-align: center;
+    color: #FF5733;
+    /* Bright color for the title */
+    font-size: 2.5em;
+    /* Increase title size */
+}
+
+#quiz-container,
+#result-container,
+#draft-container {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+#timer {
+    text-align: right;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #333;
+    /* Darker color for better contrast */
+}
+
+#question-container {
+    font-size: 1.5em;
+    /* Increase font size for questions */
+    margin-bottom: 20px;
+    padding: 15px;
+    /* Add padding around the question */
+    background-color: #e0f7fa;
+    /* Light blue background for the question */
+    border-radius: 5px;
+    /* Rounded corners */
+}
+
+#controls {
+    text-align: center;
+}
+
+button {
+    padding: 15px 30px;
+    /* Increased padding for a better touch target */
+    margin: 5px;
+    background-color: #007bff;
+    /* Primary button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    /* Rounded button corners */
+    font-size: 1em;
+    /* Slightly larger font size */
+    transition: background-color 0.3s ease;
+    /* Smooth transition effect */
+}
+
+button:hover {
+    background-color: #0056b3;
+    /* Darker shade on hover */
+}
+
+#result-text {
+    text-align: center;
+    font-size: 1.8em;
+    /* Increase font size for result text */
+    color: #4CAF50;
+    /* Green color for positive results */
+}
+
+/* Add some additional styles for buttons in the result and draft sections */
+#view-drafts,
+#finish-drafts {
+    background-color: #FF9800;
+    /* Orange color for action buttons */
+}
+
+#view-drafts:hover,
+#finish-drafts:hover {
+    background-color: #F57C00;
+    /* Darker orange on hover */
+}
